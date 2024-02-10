@@ -1,0 +1,63 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 250px;
+    height: 100vh; /* Altezza completa della viewport */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#comments {
+  overflow-y: auto;
+  height: 467px !important;
+}
+
+.comment {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.comment:nth-child(odd) {
+    background: whitesmoke;
+}
+
+.comment:nth-child(even) {
+    background: lightgrey;
+}
+
+.deleteCmt {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
